@@ -1,0 +1,20 @@
+<div id="room">
+    <div>
+        <p>When should we expect your company?</p>
+        <form id="availableform" onsubmit="loadAvailableRooms()" method="GET">
+            <label>Checkin Date</label>
+            <input type="date" name="checkin">
+            <label>Checkout Date</label>
+            <input type="date" name="checkout">
+            <button type="submit">Check Available Rooms</button>
+        </form>
+    </div>
+</div>
+
+<div>
+    <!--<button onclick="loadRooms()">Load Rooms</button>-->
+    <script src="js/ajax.js"></script>
+</div>
+<script>
+    window.onload = loadRooms();
+</script>
